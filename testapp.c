@@ -47,11 +47,13 @@ int main(int argc, char **argv) {
     // This is a pre processor directive
     // It checks for the version of the GLIB, if it's 2.36, it uses default flags, otherwise it uses no flags.
 
+
         g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
+        //This portion handles the signal detection and response
+        // app is the object transmitting signals, "activate" happens when the app is ready to go.
+
         status = g_application_run(G_APPLICATION(app), argc, argv);
         g_object_unref(app);
-
-
 
     return status;
 }
