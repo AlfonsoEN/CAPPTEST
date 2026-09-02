@@ -1,4 +1,4 @@
 project('tutorial', 'c')
 gtkdep = dependency('gtk+-3.0')
 executable('demo', 'testapp.c', dependencies : gtkdep)
-
+executable('demoo', 'secondtestapp.c', dependencies : gtkdep)

@@ -23,8 +23,6 @@ static void activate(GtkApplication* app, gpointer user_data) {
     gtk_window_set_title(GTK_WINDOW (window), "Welcome to GNOME");
     gtk_window_set_default_size(GTK_WINDOW (window), 400, 400);
     gtk_widget_show_all(window);
-    // 
-
 
 }
 
